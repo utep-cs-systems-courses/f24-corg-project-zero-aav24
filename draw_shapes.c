@@ -26,3 +26,11 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// prints an arrow using a triangle and squares
+void print_arrow(int leftCol, int size)
+{
+  print_triangle(leftCol, size);               /* triangle used as arrowhead */
+  print_square(10,5);                         /* square used as base of arrow */
+  print_square(10,5);
+  putchar('\n');
+}
